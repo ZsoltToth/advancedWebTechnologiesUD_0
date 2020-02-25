@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "css" : "scss style.scss > style.css"
   }
 }
