@@ -2,10 +2,11 @@
   "name": "0_scss",
   "version": "1.0.0",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "bootstrap": "^4.4.1"
   },
   "scripts": {
-    "css" : "scss style.scss > style.css",
-    "css-deploy" : "scss -t compressed style.scss style.css"
+    "css": "node-sass style.scss  style.css",
+    "css-deploy": "node-sass -t compressed style.scss style.css"
   }
 }

@@ -1,12 +1,1 @@
-@import "variables";
-
-html body {
-  background-color: $seconday-color;
-  color: $primary-color;
-  font-size: $font-size;
-}
-
-.header {
-  color: darken($primary-color, 10);
-  font-size : $font-size + 6px;
-}
+@import "node_modules/bootstrap/scss/bootstrap";
