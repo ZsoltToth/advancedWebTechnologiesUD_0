@@ -1,12 +1,15 @@
 $primary-color : #492540;
 $seconday-color : #f6ea8c;
 
+$font-size : 12px;
 
 html body {
   background-color: $seconday-color;
-  color: $primary-color
+  color: $primary-color;
+  font-size: $font-size;
 }
 
 .header {
-  color: darken($primary-color, 10)
+  color: darken($primary-color, 10);
+  font-size : $font-size + 6px;
 }
