@@ -4,9 +4,10 @@
   "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.13.1",
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0"
   },
   "scripts": {
-    "css" : "node-sass style.scss style.css"
+    "css": "node-sass style.scss style.css"
   }
 }
