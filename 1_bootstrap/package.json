@@ -1,0 +1,9 @@
+{
+  "name": "1_bootstrap",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "bootstrap": "^4.4.1"
+  }
+}
