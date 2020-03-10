@@ -24,8 +24,28 @@ var products = [
         name : "Chocolate",
         netPrice : 10,
         isTaxable : false
+    },
+    {
+        name : "Dakr Chocolate",
+        netPrice : -10,
+        isTaxable : false
     }
 
 ];
 
-priceCalculator.totalGrossPrice_BlockingImpl(products, console.log);
+
+priceCalculator.totalGrossPrice_Promise(products)
+    .then((totalGrossPrice)=>{
+    console.log("%f <------ Promise",totalGrossPrice)
+});
+priceCalculator.totalGrossPrice_BlockingImpl(products, (totalGrossPrice)=>{
+    console.log("%f <------ Callback",totalGrossPrice)
+});
+
+priceCalculator.totalGrossPrice_PromiseWithError(products)
+    .then((totalGrossPrice)=>{
+        console.log("%f <------ Promise With Error Handling",totalGrossPrice)
+    })
+    .catch((reason)=>{
+       console.log("Error: %s", reason);
+    });
