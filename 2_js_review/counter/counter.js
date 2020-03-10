@@ -1,8 +1,8 @@
-var increase = (function () {
+var counter = (function () {
     var count = 0;
     return function(){ count++; return count;};
-})();
+})
 
 module.exports  = {
-    increase : increase
+    closure : counter
 };
