@@ -1,7 +1,7 @@
 {
   "name": "3_faker",
   "version": "1.0.0",
-  "proxy": 3001,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "axios": "^0.19.2"
   },
