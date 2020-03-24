@@ -8,10 +8,14 @@ generateAuthor = () => {
         nationality : faker.address.country()
     };
 };
-const authors = [];
+let authors = [];
 for(i=0; i < 100; i++){
     authors.push(generateAuthor());
 }
+authors = authors.map((author,index)=>{
+    author.authorId = index;
+    return author;
+});
 
 generateBook = () =>{
     titleLength = faker.random.number({min:1, max:5});
@@ -25,4 +29,11 @@ generateBook = () =>{
         authors : booksAuthors
     };
 };
+let books = [];
 console.log(generateBook());
+for(bookIndex = 0; bookIndex < 1000; bookIndex++){
+    book = generateBook();
+    book.bookId = bookIndex;
+    books.push(book);
+}
+console.log(books);
