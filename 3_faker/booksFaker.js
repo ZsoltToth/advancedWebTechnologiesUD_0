@@ -1,4 +1,5 @@
 const faker = require('faker');
+const fs = require('fs');
 
 
 
@@ -30,10 +31,14 @@ generateBook = () =>{
     };
 };
 let books = [];
-console.log(generateBook());
 for(bookIndex = 0; bookIndex < 1000; bookIndex++){
     book = generateBook();
     book.bookId = bookIndex;
     books.push(book);
 }
-console.log(books);
+
+fs.writeFile(
+    'database.fake.json',
+    JSON.stringify({authors: authors, books: books}),
+    (err)=>{console.log(err)}
+    );
