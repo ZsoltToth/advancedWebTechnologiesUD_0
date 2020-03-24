@@ -1,12 +1,15 @@
 {
   "name": "3_faker",
   "version": "1.0.0",
-  "dependencies": {},
+  "proxy": 3001,
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
   "devDependencies": {
     "faker": "^4.1.0",
     "json-server": "^0.16.1"
   },
   "scripts": {
-    "start-json-server" : "json-server --watch database.fake.json --port 3001"
+    "start-json-server": "json-server --watch database.fake.json --port 3001"
   }
 }
