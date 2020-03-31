@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './components/Greetings';
 import Greetings from "./components/Greetings";
+import NewsFeed from "./components/NewsFeed";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
           <Greetings name={"Alice"}/>
+        <NewsFeed/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
