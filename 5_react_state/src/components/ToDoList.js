@@ -45,6 +45,13 @@ class ToDoList extends React.Component{
 
     }
 
+    handleDeleteOnClick(todo, event){
+        this.setState({todos : this.state.todos.filter((curToDo)=>{
+                return curToDo.name !== todo.name
+            })});
+        console.log(todo);
+    }
+
     render(){
         return (
             <div>
@@ -118,7 +125,11 @@ class ToDoList extends React.Component{
                                         <td>{todoItem.name}</td>
                                         <td>{todoItem.estimation}</td>
                                         <td>{todoItem.description}</td>
-                                        <td><button className="btn-danger">Delete</button></td>
+                                        <td>
+                                            <button
+                                                className="btn-danger"
+                                                onClick={this.handleDeleteOnClick.bind(this,todoItem)}
+                                            >Delete</button></td>
                                     </tr>
                                 )
                             })
