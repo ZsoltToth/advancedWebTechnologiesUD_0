@@ -10,7 +10,7 @@ var lotteryPicks = (props) =>{
                         return (
                             <li key={pick}>{pick}</li>
                         );
-                    });
+                    })
                 }
 
             </ol>

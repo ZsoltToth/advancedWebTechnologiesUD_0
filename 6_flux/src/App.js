@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
         <LotteryGeneratorForm/>
+        <div id={"picks"}></div>
     </div>
   );
 }
