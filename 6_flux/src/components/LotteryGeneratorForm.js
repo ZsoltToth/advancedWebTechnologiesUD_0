@@ -16,6 +16,7 @@ class LotteryGeneratorForm extends React.Component{
         return (
             <div>
                 <table>
+                    <tbody>
                     <tr>
                         <td>
                             Minimum
@@ -69,6 +70,7 @@ class LotteryGeneratorForm extends React.Component{
                             >Generate</button>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
             </div>
         );
